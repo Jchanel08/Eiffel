@@ -54,6 +54,7 @@ end
 #   activate :minify_javascript
 # end
 
+activate :minify_html
 
 # CDN configuration
 # configure :build do

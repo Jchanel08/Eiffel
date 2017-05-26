@@ -1,5 +1,5 @@
 body {
-  background-color: #000;
+  background-color: #0a0a0a;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
@@ -20,4 +20,10 @@ a {
 
 p { color: #fff; }
 
-svg { opacity: .2; }
+.vl-logo {
+  opacity: .15;
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}

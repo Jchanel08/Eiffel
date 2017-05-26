@@ -4,7 +4,6 @@
   "description": "",
   "main": "/js/app.js",
   "devDependencies": {
-    "extract-text-webpack-plugin": "^2.0.0-rc.3",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-load-plugins": "^1.1.0",
@@ -13,12 +12,10 @@
   "dependencies": {
     "bower": "^1.8.0",
     "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "^2.0.0-rc.3",
     "global": "^4.3.1",
     "gulp-autoprefixer": "^3.1.0",
     "node-sass": "^4.5.0",
     "npm": "^4.2.0",
-    "sass-loader": "^6.0.2",
-    "webpack": "^2.2.1"
+    "sass-loader": "^6.0.2"
   }
 }
