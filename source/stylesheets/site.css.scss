@@ -1,24 +1,174 @@
+@import 'variables';
+
 body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+  background-color: $color-grey-darker;
 }
 
-a {
-  color: rgba(#000, 0.7);
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+  @include breakpoint($tablet) {
+    padding: 40px 70px;
+  }
+
+  @include breakpoint($desktop) {
+    padding: 70px 100px;
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+
+// Typography
+
+a {
+  color: $color-grey-light;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $color-link;
+  }
 }
+
+p { 
+  color: $color-grey-light;
+  font-family: $rubik;
+  font-size: 18px;
+
+  @include breakpoint($tablet) {
+    font-size: 22px;
+  }
+}
+
+
+// Logo Color
+$logo-color: $color-grey-dark;
+
+.vl-logo { fill: $logo-color; }
+.vl-logo--stroke { stroke: $logo-color; }
+
+
+// Homepage Styling {
+.logo {
+  width: 250px;
+  height: 100%;
+
+  @include breakpoint($tablet) {
+    width: 320px;
+  }
+
+  @include breakpoint($desktop) {
+    width: 400px;
+  }
+}
+
+.lead {
+  font-size: 52px;
+  font-weight: 500;
+  color: $color-grey-lighter;
+  margin: 50px 0;
+
+  @include breakpoint($tablet) {
+    font-size: 80px;
+    margin: 70px 0;
+  }
+
+  @include breakpoint($desktop) {
+    font-size: 96px;
+    margin: 100px 0;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($tablet) { 
+    flex-direction: row;
+    justify-content: space-between;
+   }
+}
+
+.content__header {
+  font-size: 15px;
+  letter-spacing: 1.6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color-grey;
+  margin-bottom: 35px;
+}
+
+.content__project-list {
+  list-style: none;
+  padding: 0;
+  color: $color-grey-light;
+  font-family: $rubik;
+  font-weight: 400;
+  font-size: 22px;
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: $color-grey-light;
+    text-decoration: none;
+    transition: width 0.2s cubic-bezier(0.145, 0.885, 0.32, 1.135);
+
+    span { 
+      position: relative; 
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        background-color: $color-link;
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 2px;
+        transition: color 180ms ease;
+        transition: width 0.2s cubic-bezier(0.145, 0.885, 0.32, 1.135);
+      }
+    }
+
+    &:hover {
+      color: $color-link;
+
+      span:after { 
+        width: 100%;
+      }
+    }
+  }
+}
+
+.content__team {
+  
+  @include breakpoint($desktop) { margin-right: 5%; }
+
+  a {
+    position: relative;
+    margin-bottom: 15px;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      background-color: $color-link;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      transition: color 180ms ease;
+      transition: width 0.2s cubic-bezier(0.145, 0.885, 0.32, 1.135);
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+

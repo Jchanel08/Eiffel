@@ -6,11 +6,18 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "" %></title>
+    
+    <!-- /stylesheets/site.css.scss -->
     <%= stylesheet_link_tag "site" %>
+
+    <!-- /javascripts/site.js -->
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+  <div class="container">
+    <!-- Where the content is outputted -->
     <%= yield %>
+  </div>
   </body>
 </html>
