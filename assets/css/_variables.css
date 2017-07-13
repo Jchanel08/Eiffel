@@ -9,7 +9,7 @@
   --color-grey-darker:      #131617;
   --color-link:             #1089B2;
 
-  --logo-color:               var(--color-grey-dark);
+  --logo-color:               var(--color-grey);
   --color-bg:                 var(--color-grey-darker);
 }
 
