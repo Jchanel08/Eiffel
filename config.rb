@@ -71,3 +71,38 @@ end
 
 #  activate :asset_host, :host => '//YOURDOMAIN.cloudfront.net'
 # end
+
+
+# Google Analytics configuration
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-XXXXXXX-X' # Replace with your property ID.
+  # Removing the last octet of the IP address (default = false)
+  # ga.anonymize_ip = false
+
+  # Tracking across a domain and its subdomains (default = nil)
+  # ga.domain_name = 'example.com'
+
+  # Tracking across multiple domains and subdomains (default = false)
+  # ga.allow_linker = false
+
+  # Enhanced Link Attribution (default = false)
+  # ga.enhanced_link_attribution = false
+
+  # Log detail messages to the console (default = false)
+  # ga.debug = false
+
+  # Trace debugging will output more verbose information to the console (default = false)
+  # ga.debug_trace = false
+
+  # Disable extension (default = false)
+  # ga.disable = true
+
+  # Testing your implementation without sending hits (default = true) in development
+  # ga.test = true
+
+  # Compress the JavaScript code (default = false)
+  # ga.minify = false
+
+  # Output style - :html includes <script> tag (default = :html)
+  # ga.output = :js
+end
