@@ -1,0 +1,261 @@
+@import '_variables.pcss';
+
+body {
+  background-color: #fff;
+  color: var(--color-grey-light);
+  font-family: var(--font-open-sans);
+  overflow-x: hidden;
+}
+
+body,
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  position: relative;
+}
+
+
+/* Background image styling */
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.main-cover {
+  position: fixed;
+  z-index: 0;
+  object-fit: cover;
+  height: 280px;
+  width: 100%;
+
+  @media (--tablet) {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* links */
+a {
+  color: var(--color-grey-light);
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: var(--color-link);
+  }
+}
+
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: var(--color-grey-light);
+  padding: 10px 16px;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-bg);
+  letter-spacing: 1.1px;
+}
+
+
+/* Content Area Styling */
+.content-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 320px;
+  padding-bottom: 20px;
+  //background-color: #929A6B;
+
+  @media (--tablet) {
+    padding: 0;
+  }
+}
+
+.content-area {
+position: relative;
+z-index: 2;
+padding: 15px;
+margin: 0 10px 30px 10px;
+border-radius: 12px;
+background-color: var(--color-bg);
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+overflow: hidden;
+
+  @media (--tablet) {
+    top: 0;
+    width: 400px;
+    margin-left: 100px;
+    padding: 25px 35px 35px 35px;
+    border-radius: 12px; 
+  }
+
+  & .inner {
+    display: flex;
+    height: auto;
+    //justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.player-name {
+  margin: 10px 0 20px 0;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--color-primary);
+  margin: 0 0 60px 0;
+
+  @media (--tablet) {
+    font-size: 48px;
+    margin: 0 0 10px 0;
+  }
+}
+
+.lname-highlight {
+  position: absolute;
+  top: -20px;
+  z-index: -1;
+  color: var(--color-grey-lighter);
+  text-transform: uppercase;
+  font-size: 90px;
+  font-family: var(--font-asap);
+  letter-spacing: -2px;
+  font-weight: 800;
+
+  @media (--tablet) {
+    font-size: 130px;
+    top: -40px;
+  }
+}
+
+.position-subhead {
+  font-family: var(--font-bitter);
+  font-style: italic;
+  margin-bottom: -5px; 
+}
+
+.stats {
+  display: flex;
+  height: 140px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+  
+
+
+  @media (--tablet) {
+    grid-column-gap: 15px;
+    margin-top: 0;
+    margin-bottom: 30px; 
+    height: 150px;
+  }
+
+  & .stat-item {
+    position: relative;
+    font-family: var(--font-asap);
+    font-size: 18px;
+    color: var(--color-grey);
+    margin-bottom: 40px;
+    font-weight: 800;
+    flex-basis: 48%;
+    text-align: left;
+
+    @media (--tablet) { 
+      margin-top: 34px;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    & .label {
+      position: absolute;
+      font-family: var(--font-open-sans);
+      font-size: 14px;
+      text-transform: uppercase;
+      top: -22px; 
+      color: var(--color-primary);
+      letter-spacing: 1px;
+
+      @media (--tablet) { 
+        font-size: 13px;
+        top: -20px;
+      }
+    }
+  }
+}
+
+/* Blockquote */
+blockquote {
+  position: relative;
+  font-family: var(--font-bitter);
+  font-style: italic; 
+  padding: 0;
+  margin: 0;
+
+  & p {
+    color: var(--color-grey-dark);
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  & .quote-autor {
+    color: var(--color-grey);
+  }
+
+  & .quote-accent {
+    position: absolute;
+    left: -40px;
+    top: -70px;
+    z-index: -1;
+
+    & .accent-fill {
+      opacity: .15;
+    }
+  }
+}
+
+.quote-title {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--font-open-sans);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--color-grey-light);
+  margin-bottom: 10px;
+}
+
+/* Homepage Styling */
+.logo {
+  width: 250px;
+  height: 100%;
+
+  @media (--tablet) {
+    width: 320px;
+  }
+
+  @media (--desktop) {
+    width: 400px;
+  }
+}
+
+.lead {
+  font-size: 52px;
+  font-weight: 500;
+  color: var(--color-grey-lighter);
+  margin: 50px 0;
+
+  @media (--tablet) {
+    font-size: 80px;
+    margin: 70px 0;
+  }
+
+  @media (--desktop) {
+    font-size: 96px;
+    margin: 100px 0;
+  }
+}
+

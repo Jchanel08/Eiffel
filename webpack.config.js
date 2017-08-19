@@ -5,12 +5,12 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   context: path.resolve(__dirname),
   entry: {
-    app: './assets/app.js'
+    app: './source/assets/app.js'
   },
   module: {
     loaders: [
       {
-        test: /\.css$/,
+        test: /\.pcss$/,
         use: ExtractTextPlugin.extract({
           use: [
             {
