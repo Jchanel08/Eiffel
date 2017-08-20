@@ -61,15 +61,11 @@ p {
 
 /* Homepage Styling */
 .logo {
-  width: 250px;
+  width: 50px;
   height: 100%;
 
   @media (--tablet) {
-    width: 320px;
-  }
-
-  @media (--desktop) {
-    width: 400px;
+    width: 80px;
   }
 }
 
@@ -89,102 +85,3 @@ p {
     margin: 100px 0;
   }
 }
-
-.content {
-  display: flex;
-  flex-direction: column;
-
-  @media (--tablet) { 
-    display: grid;
-    grid-template-columns: 60% 20% 20%;
-   }
-}
-
-.content__header {
-  font-size: 15px;
-  letter-spacing: 1.6px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--color-grey);
-  margin: 50px 0 15px 0;
-
-  @media (--tablet) { 
-    margin: 0 0 35px 0;
-   }
-}
-
-.content__project-list {
-  list-style: none;
-  padding: 0;
-  color: var(--color-grey-light);
-  font-family: var(--font-rubik);
-  font-weight: 400;
-  font-size: 22px;
-
-  & li {
-    margin-bottom: 14px;
-
-    @media (--tablet) { margin-bottom: 18px; };
-  }
-
-  & a {
-    color: var(--color-grey-light);
-    text-decoration: none;
-    transition: width 0.2s cubic-bezier(0.145, 0.885, 0.32, 1.135);
-
-    & span { 
-      position: relative; 
-
-      &:after {
-        content: '';
-        position: absolute;
-        display: inline-block;
-        background-color: var(--color-link);
-        left: 0;
-        bottom: -5px;
-        width: 0;
-        height: 2px;
-        transition: color 180ms ease;
-        transition: width 0.2s cubic-bezier(0.145, 0.885, 0.32, 1.135);
-      }
-    }
-
-    &:hover {
-      color: var(--color-link);
-
-      & span:after { 
-        width: 100%;
-      }
-    }
-  }
-}
-
-.content__team {
-  
-  @media (--desktop) { margin-right: 5%; }
-
-  & a {
-    position: relative;
-    margin-bottom: 15px;
-    
-    &:after {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      background-color: var(--color-link);
-      left: 0;
-      bottom: -5px;
-      width: 0;
-      height: 2px;
-      transition: color 180ms ease;
-      transition: width 0.2s cubic-bezier(0.145, 0.885, 0.32, 1.135);
-    }
-
-    &:hover {
-      &:after {
-        width: 100%;
-      }
-    }
-  }
-}
-
