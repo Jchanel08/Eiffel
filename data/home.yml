@@ -1,0 +1,6 @@
+title: Eiffel
+subhead: Static Site Build Template 
+description: >
+  Eiffel is a project template for a static site build tool for designers. It runs on Middleman for all the heavy lifting, Webpack for CSS and JS future-spec use and compilation.
+logo_img_url: /images/vl-mark.svg
+primary_color: "#4DA2ED"

@@ -1,42 +1,44 @@
-var path = require('path');
-var webpack = require('webpack');
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+const webpack = require('webpack');
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-var extractSass = new ExtractTextPlugin({
-    filename: "app.css",
-    disable: process.env.NODE_ENV === "development"
-});
-
-var config = {
-    entry: {
-        "vendor": ["./js/scripts.js"],
-    },
-
-    output: {
-        path: "./css",
-        filename: "js/[name].js",
-    },
-
-    module: {
-        loaders: [
+module.exports = {
+  context: path.resolve(__dirname),
+  entry: {
+    app: './source/assets/app.js'
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.pcss$/,
+        use: ExtractTextPlugin.extract({
+          use: [
             {
-                test: /\.scss$/,
-                loader: extractSass.extract({
-                    loader: [{
-                        loader: "css-loader"
-                    }, {
-                        loader: "sass-loader"
-                    }]
-                })
-            }
-        ]
-    },
-
-    plugins: [
-        new ExtractTextPlugin("css/[name].css"),
-
-        extractSass
+              loader: 'css-loader',
+              options: { importLoaders: 1 }
+            },
+            'postcss-loader'
+          ]
+        })
+      },
+      {
+          test: /\.js$/,
+          loader: 'babel-loader',
+          query: {
+              presets: ["babel-preset-es2015", "babel-preset-es2016", "babel-preset-es2017"].map(require.resolve)
+          }
+      }
     ]
-}
-
-module.exports = config;
+  },
+  output: {
+    path: __dirname + '/.tmp/dist',
+    filename: 'assets/js/[name].js'
+  },
+  stats: {
+         colors: true
+     },
+  devtool: 'source-map',
+  plugins: [
+    new ExtractTextPlugin('assets/css/[name].css')
+  ]
+};

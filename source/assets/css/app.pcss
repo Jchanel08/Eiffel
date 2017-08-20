@@ -1,0 +1,87 @@
+@import '_variables.pcss';
+
+body {
+  background-color: var(--color-bg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  @media (--tablet) {
+    padding: 40px 70px;
+  }
+
+  @media (--desktop) {
+    padding: 70px 100px;
+  }
+}
+
+
+/* Typography */
+a {
+  color: var(--color-grey-light);
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: var(--color-link);
+  }
+}
+
+p { 
+  color: var(--color-grey-light);
+  font-family: var(--font-rubik);
+  font-size: 16px;
+
+  @media (--tablet) {
+    font-size: 18px;
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: var(--color-grey-light);
+  padding: 10px 16px;
+  border-radius: 3px;
+  font-family: var(--font-rubik);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-bg);
+  letter-spacing: 1.1px;
+}
+
+
+/* Logo Color */
+.vl-logo { fill: var(--logo-color); }
+.vl-logo--stroke { stroke: var(--logo-color); }
+
+
+/* Homepage Styling */
+.logo {
+  width: 50px;
+  height: 100%;
+
+  @media (--tablet) {
+    width: 80px;
+  }
+}
+
+.lead {
+  font-size: 52px;
+  font-weight: 500;
+  color: var(--color-grey-lighter);
+  margin: 50px 0;
+
+  @media (--tablet) {
+    font-size: 80px;
+    margin: 70px 0;
+  }
+
+  @media (--desktop) {
+    font-size: 96px;
+    margin: 100px 0;
+  }
+}
