@@ -1,13 +1,6 @@
-first_name: Caitlin 
-last_name: Gibson
-position: Central Forward
-jersey: 53
-club: Union Sacramento
-coach: Rozie DeWeese
-school: Del Campo HS
-gpa: '4.0'
-coach_assessment: >
-  Caitlin has much improved in her willingness and ability to use her size and strength in her individual battles on both sides of the ball. Caitlin has scored several goals using her head - from set pieces and also through the run of play from flank services. She can strike a ball with good power and does not hesitate in shooting from distance - both through the run of play and also on set pieces. Caitlin has a competitive mentality and possesses many of the physical tools necessary to find success at the collegiate level.
-coach_assessment_name: Coach Rozie DeWeese
-background_url: /images/IMG_5992.JPG
+title: Eiffel
+subhead: Static Site Build Template 
+description: >
+  Eiffel is a project template for a static site build tool for designers. It runs on Middleman for all the heavy lifting, Webpack for CSS and JS future-spec use and compilation.
+logo_img_url: /images/IMG_5992.JPG
 primary_color: "#4DA2ED"
