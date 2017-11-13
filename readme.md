@@ -40,3 +40,9 @@ When you're ready to push the site live, or just send someone a completed versio
 
 ## Other helpful tips
 This is a pre-configured project folder that should allow you to get up and going on new web projects in a matter of seconds, rather than spending hours building folder structure or finding configurations online. Use a modern IDE like Code or Atom which has a terminal window built into the editor (click and "pull" from the bottom of the window when you're open to your project folder). When you're ready to show the world what you've made, deploy to a static-site deployment service like Netlify and be blown away by how powerful continuid deployment makes you feel.
+
+
+## Configuration
+Understanding how Eiffel is structured should help you narrow down your google search when you want to do certin things, but there are a lot of things that are common enough in web development, that the examples are easy to share:
+
+_soon to come..._

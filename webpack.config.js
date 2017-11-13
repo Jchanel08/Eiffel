@@ -25,8 +25,15 @@ module.exports = {
           test: /\.js$/,
           loader: 'babel-loader',
           query: {
-              presets: ["babel-preset-es2015", "babel-preset-es2016", "babel-preset-es2017"].map(require.resolve)
+              presets: ["babel-preset-env"].map(require.resolve)
           }
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        loader: 'file-loader',
+        options: {
+          name: '../fonts/[name].[ext]',
+        },
       }
     ]
   },
@@ -35,8 +42,8 @@ module.exports = {
     filename: 'assets/js/[name].js'
   },
   stats: {
-         colors: true
-     },
+      colors: true
+  },
   devtool: 'source-map',
   plugins: [
     new ExtractTextPlugin('assets/css/[name].css')
