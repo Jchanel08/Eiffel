@@ -4,9 +4,11 @@
   "description": "",
   "main": "/js/app.js",
   "scripts": {
+    "run-dev": "middleman",
+    "run-build": "middleman build --verbose",
     "start": "NODE_ENV=development ./node_modules/webpack/bin/webpack.js --watch -d --color",
     "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p",
-    "babel": "babel --presets es2015 js/main.js -o ./assets/app.js"
+    "babel": "babel --presets env js/main.js -o ./assets/app.js"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

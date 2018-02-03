@@ -23,6 +23,7 @@ module.exports = {
       },
       {
           test: /\.js$/,
+          exclude: /(node_modules|bower_components)/,
           loader: 'babel-loader',
           query: {
               presets: ["babel-preset-env"].map(require.resolve)
