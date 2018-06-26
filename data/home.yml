@@ -1,6 +1,5 @@
 title: Eiffel
-subhead: Static Site Build Template 
+subhead: A Simple Way to Develop Static Content Websites
 description: >
-  Eiffel is a project template for a static site build tool for designers. It runs on Middleman for all the heavy lifting, Webpack for CSS and JS future-spec use and compilation.
+  Eiffel is a simple way to develop and manage static-content websites. It leverages the power of several popular tools like Middleman, Webpack, SASS, and Netlify. Each tool has been pre-configed for ease of use and flexability, while several start templates will be available in the future.
 logo_img_url: /images/vl-mark.svg
-primary_color: "#4DA2ED"

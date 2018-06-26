@@ -1,5 +1,26 @@
+<div class="container eiffel">
+  <div class="eiffel__intro">
+    <h1><%= tag :img, :src => data.home.logo_img_url, :class => "logo" %> <%= data.home.title %></h1>
+    <p class="lead"><%= data.home.subhead %></p>
+    <p><%= data.home.description %></p>
+  </div>
 
-<h1><%= data.home.title %></h1>
-<p class="lead"><%= data.home.subhead %></p>
-<p><%= data.home.description %></p>
-<%= tag :img, :src => data.home.logo_img_url, :class => "logo" %>
+  <hr>
+
+  <div class="eiffel__features">
+  <h2>Features</h2>
+    <ul>
+      <li><a href="https://middlemanapp.com/Middleman" target="_blank" rel="noopener">Middleman</a> — Static site generator built in Ruby, pre configured for a hot-reloading dev enviroment</li>
+      <li><a href="https://webpack.js.org/" target="_blank" rel="noopener">Webpack 4.0</a> — External asset loader for Sass, BabelJS, and Webfonts</li>
+      <li>Automatic Favicon Generator</li>
+      <li>Basic SASS grid framework, variable system, and other helpers</li>
+      <li><a href="https://github.com/postcss/autoprefixer" target="_blank" rel="noopener">Autoprefixer</a> to add all neccesary CSS vendor prefixes (automagically)</li>
+      <li>Pre-Configured with <a href="https://www.netlifycms.org/" target="_blank" rel="noopener">NetlifyCMS</a> for simple content management</li>
+    </ul>
+  </div>
+
+  <div class="eiffel__links">
+    <a class="eiffel__links__github" href="https://github.com/Anthonytr/Eiffel" target="_blank" rel="noopener"><img src="/images/github-logo.svg"> GitHub</a>
+    <a class="eiffel__links__netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/Anthonytr/Eiffel" target="_blank" rel="noopener"><img src="/images/netlify-deploy.svg"></a>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 # Eiffel
 
-_Static Site Starter Kit_
+_A Simple Way to Develop Static Content Websites_
 
 Powered by [Vault Labs](https://vaultlabs.co)
 

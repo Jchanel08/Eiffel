@@ -1,0 +1,31 @@
+// Helper Classes
+// ----------------------
+
+
+// ----------------------
+// Vertical Hide
+.v-hide {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+
+// ----------------------
+// Text Helpers
+.text__bold { font-weight: bold !important; }
+.p__large { font-size: $font__paragraph-lead }
+.p__small { font-size: $font__paragraph-small }
+
+
+// ----------------------
+// Fonts
+.mb0 { margin-bottom: 0 !important; }
+.mb10 { margin-bottom: 10px !important; }
+.mb20 { margin-bottom: 20px !important; }
+.mb30 { margin-bottom: 30px !important; }
+
+.mt0 { margin-top: 0 !important; }
+.mt10 { margin-top: 10px !important; }
+.mt20 { margin-top: 20px !important; }
+.mt30 { margin-top: 30px !important; }

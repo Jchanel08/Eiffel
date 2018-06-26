@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: Anthonytr/Eiffel # Path to your Github repository
+  branch: master # Branch to update (master by default)
+
+media_folder: source/images # Folder where user uploaded files should go
+public_folder: images # Folder where user uploaded files should go
+publish_mode: editorial_workflow # Enable drafts
+
+collections: # A list of collections the CMS should be able to edit
+- name: content # Used in routes, ie.: /admin/collections/:slug/edit
+  label: Content # Used in the UI, ie.: "New Post"
+  files:
+    - file: data/home.yml 
+      label: Home Page # Used in the UI
+      name: home # Used in routes, e.g. /admin/collections/blog
+      delete: false # Prevent users from deleting documents in this collection 
+      editor: 
+        preview: false # Disables the Preview
+      fields: # The fields each document in this collection have
+        - {label: Site Title, name: title, widget: string}
+        - {label: Subhead, name: subhead, widget: string}
+        - {label: Site Description, name: desc, widget: text}
+        - {label: Logo Image, name: logo_img_url, widget: image}
