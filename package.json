@@ -5,7 +5,7 @@
   "main": "/js/app.js",
   "scripts": {
     "eiffel": "middleman",
-    "eiffel-build": "middleman build",
+    "eiffel-build": "middleman build --verbose",
     "start": "./node_modules/webpack/bin/webpack.js --watch -d --color",
     "build": "./node_modules/webpack/bin/webpack.js --bail -p",
     "babel": "babel --presets env js/main.js -o ./assets/app.js"
