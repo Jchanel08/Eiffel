@@ -20,8 +20,8 @@ module.exports = {
         }
       },
       {
-        test: /\.pcss$/,
-        use:  ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+        test: /\.scss$/,
+        use:  [ 'style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
       },
       {
         test: /\.(ttf|eot|woff|woff2)$/,
