@@ -1,7 +1,9 @@
+@import '_variables.scss';
 
 html,
 body {
-  background-color: #131617;
+  display: flex;
+  background-color: $color-purple;
   color: #fff;
   width: 100%;
   margin: 0;

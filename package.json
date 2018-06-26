@@ -4,10 +4,10 @@
   "description": "",
   "main": "/js/app.js",
   "scripts": {
-    "run-dev": "./node_modules/webpack/bin/webpack.js --watch -d --color",
-    "run-build": "./node_modules/webpack/bin/webpack.js build --verbose",
-    "start": "webpack --watch -d --color",
-    "build": "webpack --bail -p",
+    "eiffel": "middleman",
+    "eiffel-build": "middleman build",
+    "start": "./node_modules/webpack/bin/webpack.js --watch -d --color",
+    "build": "./node_modules/webpack/bin/webpack.js --bail -p",
     "babel": "babel --presets env js/main.js -o ./assets/app.js"
   },
   "devDependencies": {
@@ -21,8 +21,6 @@
     "node-sass": "^4.9.0",
     "postcss": "^6.0.6",
     "postcss-cssnext": "^3.1.0",
-    "postcss-custom-media": "^6.0.0",
-    "postcss-import": "^10.0.0",
     "postcss-loader": "^2.1.5",
     "postcss-media-variables": "^2.0.0",
     "sass-loader": "^7.0.3",
@@ -31,10 +29,5 @@
     "stylelint-config-standard": "^17.0.0",
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8"
-  },
-  "dependencies": {
-    "bower": "^1.8.0",
-    "global": "^4.3.1",
-    "npm": "^4.2.0"
   }
 }
