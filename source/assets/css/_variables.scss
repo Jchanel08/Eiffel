@@ -1,18 +1,104 @@
-$font--primary: 'Source Sans Pro', sans-serif;
-$a--ease: all 180ms ease;
-$a--bezier: all 180ms cubic-bezier(.25,.17,.2,1);
-
-
-
-
-// Colors
-$color-purple: #8060FF;
-$color-red: #FF6060;
-$color-yellow: #F6BB44;
-
-$color-light-gray: #BAB7B7;
-$color-gray: #727375;
-$color-dark-gray: #323335;
+// ----------------------
+// Fonts
+$font__source-sans: 'Source Sans Pro', sans-serif;
+$font__rubik: 'Rubik', sans-serif;
+$font__primary: $font__rubik;
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900');
 
+
+// ----------------------
+// Animations
+$a__ease:                       all 180ms ease;
+$a__bezier:                     all 180ms cubic-bezier(.25,.17,.2,1);
+
+
+// Text Sizing
+$font-base__size:               18px; // Change this once for a consistent size change across your whole type system
+$font__size--lg:                ($font-base__size * 1.333);
+$font__size--sm:                ($font-base__size * .75);
+
+$font-base__line-height:        1.5;
+$font-base__header-weight:      bold;
+$font-base__header-margin:      12px 0 8px;
+
+$font__h1:                      $font-base__size * 3.157;
+$font__h2:                      $font-base__size * 2.369;
+$font__h3:                      $font-base__size * 1.777;
+$font__h4:                      $font-base__size * 1.333;
+$font__paragraph-lead:          $font__size--lg;
+$font__paragraph:               $font-base__size;
+$font__paragraph-small:         $font__size--sm;
+
+
+// ----------------------
+// Colors
+$color__blue:                   #007bff;
+$color__purple:                 #8060FF;
+$color__red:                    #FF6060;
+$color__yellow:                 #F6BB44;
+
+$color__white:                  #f0f0f0;
+$color__gray--1:                #ECEDED;
+$color__gray--2:                #8F9496;
+$color__gray--3:                #727375;
+$color__gray--4:                #454C50;
+$color__gray--5:                #323335;
+$color__black:                  #131617;
+
+$color__bg: $color__gray--5;
+
+
+$color__link: $color__blue;
+$color__link--hover: darken($color__blue, 15%);
+
+// ----------------------
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+@include assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include assert-starts-at-zero($grid-breakpoints);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+@include assert-ascending($container-max-widths, "$container-max-widths");
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$line-height-lg:              1.5 !default;
+$line-height-sm:              1.5 !default;
+
+$border-width:                1px !default;
+
+$border-radius:               .25rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-sm:            .2rem !default;

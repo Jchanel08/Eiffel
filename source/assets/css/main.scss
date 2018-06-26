@@ -1,11 +1,148 @@
-@import '_variables.scss';
+@import '_mixins';
+@import '_variables';
+@import '_grid';
+@import '_helpers';
 
 html,
 body {
-  display: flex;
-  background-color: $color-purple;
-  color: #fff;
-  width: 100%;
-  margin: 0;
+  background-color: $color__bg;
+  font-family: $font__primary;
+  color: $color__white;
   font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: $font__h1;
+  line-height: $font-base__line-height;
+  margin: $font-base__header-margin;
+  font-weight: $font-base__header-weight;
+}
+
+h2 {
+  font-size: $font__h2;
+  line-height: $font-base__line-height;
+  margin: $font-base__header-margin;
+  font-weight: $font-base__header-weight;
+}
+
+h3 {
+  font-size: $font__h3;
+  line-height: $font-base__line-height;
+  margin: $font-base__header-margin;
+  font-weight: $font-base__header-weight;
+}
+
+h4 {
+  font-size: $font__h4;
+  line-height: $font-base__line-height;
+  margin: $font-base__header-margin;
+  font-weight: $font-base__header-weight;
+}
+
+p {
+  font-family: $font__source-sans;
+  font-size: $font__paragraph;
+  line-height: $font-base__line-height;
+  margin: 4px 0 12px;
+  font-weight: normal;
+}
+
+.lead {
+  font-family: $font__source-sans;
+  font-size: $font__size--lg;
+  line-height: $font-base__line-height;
+  margin: 4px 0 12px;
+  font-weight: bold;
+}
+
+hr {
+  border-bottom: 1px solid $color__gray--3;
+  border-style: solid;
+  margin: 24px 0;
+}
+
+ul {
+  font-size: $font__paragraph;
+  padding-left: 20px;
+
+  li {
+    margin-bottom: 12px;
+  }
+}
+
+a {
+  font-family: $font__source-sans;
+  font-size: $font__paragraph;
+  line-height: $font-base__line-height;
+  color: $color__white;
+  margin: 4px 0 12px;
+  font-weight: normal;
+  text-decoration: underline;
+
+  &:hover {
+    color: $color__link;
+  }
+}
+
+
+// ----------------------
+// Landing Page Styles
+
+.eiffel {
+  margin-top: 10px;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 40px;
+  }
+
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+
+  hr {
+    @include media-breakpoint-up(md) { margin: 40px 0; }
+  }
+
+  .eiffel__links {
+
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-up(md) { margin-top: 40px; }
+
+    a {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .eiffel__links__github {
+    img {
+      height: 20px;
+      width: auto;
+      margin-right: 6px;
+    }
+
+    display: inline-flex;
+    align-items: center;
+    background: $color__white;
+    color: $color__gray--5;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 8px;
+  }
+
+  .eiffel__links__netlify {
+    height: 32px;
+  }
 }
