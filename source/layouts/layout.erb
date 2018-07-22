@@ -10,12 +10,23 @@
     <!-- Use the title from a page's frontmatter if it has one, otherwise output the string "Eiffel" -->
     <title><%= current_page.data.title || "Eiffel" %></title>
 
-    <!-- Standard basic meta-tag info -->
-    <meta property="og:description" content="">
-    <meta property="og:site_name" content="Eiffel Static Site Build Template">
+    <!-- Standard Meta Tags -->
+    <meta property="title" content="Eiffel">
+    <meta property="description" content="Eiffel Static Site Build Template">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:description" content="Eiffel Static Site Build Template">
+    <meta property="og:site_name" content="Eiffel">
     <meta property="og:title" content="Eiffel Static Site Build Template">
     <meta property="og:image" content="">
     <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="Eiffel" />
+    <meta name="twitter:title" content="Eiffel" />
+    <meta name="twitter:description" content="Eiffel Static Site Build Template" />
+    <meta name="twitter:image" content="" />
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
