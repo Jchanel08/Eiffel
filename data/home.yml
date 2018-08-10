@@ -1,5 +1,5 @@
 title: Eiffel
 subhead: A Simple Way to Develop Static Content Websites
 description: >
-  Eiffel is a simple way to develop and manage static-content websites. It leverages the power of several popular tools like Middleman, Webpack, SASS, and Netlify. Each tool has been pre-configed for ease of use and flexability, while several start templates will be available in the future.
+  Eiffel leverages the power of several popular tools like Middleman, Webpack, SASS, and Netlify. Each tool has been pre-configed for ease of use and flexability, while several start templates will be available in the future.
 logo_img_url: /images/vl-mark.svg
