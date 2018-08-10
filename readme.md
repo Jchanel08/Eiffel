@@ -14,22 +14,23 @@ Eiffel includes basic HTML setup that includes all the neccesdary meta tags for 
 
 ***
 
-## Local Development
+## Getting Started
 
 _Eiffel isntructions are written for MacOS, but can work on Windows if you use your commandline._
 
-Clone this repo or download it manually, and copy/paste the folder to your preferred locaiton.
+1. Clone this repo or download it manually, and copy/paste the folder to your preferred locaiton.
 
-You need [Ruby](https://www.ruby-lang.org/en/downloads/), [Node.js](https://nodejs.org/en/), [Yarn](https://yarnpkg.com/en/) to use Eiffel.
-_Yarn is used as a preference because it's much faster than NPM. You can use NPM instead if you prefer)
+2. You need [Ruby](https://www.ruby-lang.org/en/downloads/), [Node.js](https://nodejs.org/en/), [Yarn](https://yarnpkg.com/en/) to use Eiffel.
+- _Yarn is used as a preference because it's much faster than NPM. You can use NPM instead if you prefer_
 
-Once you have all of those, you can start installing the neccesary dependancies to Eiffel. Open terminal and type:
-Install Middleman: `gem install middleman`
-Install Bundler: `gem install bundler`
+3. Once you have all of those, you can start installing the neccesary dependancies to Eiffel. Open terminal and type:
+- Install Middleman: `gem install middleman`
+- Install Bundler: `gem install bundler`
 
-Navigate to your project folder (`cd/your-project`):
-Install Middleman and gem dependancies: `bundle install`
-Install node modules: `yarn`
+4. Navigate to your project folder (`cd/your-project`):
+- Install Middleman and gem dependancies: `bundle install`
+- Install node modules: `yarn`
+
 
 ## Development vs. Production
 You will likely use Eiffel in 2 ways. The first is to build your website, in which case you need a local development enviroment. Running `yarn run-dev` from your project folder will start a live-reload server which you can see at `http://localhost:4567`.
