@@ -1,10 +1,6 @@
-// Helper Classes
 // ----------------------
-
-
-// ----------------------
-// Vertical Hide
-.v-hide {
+// Visual Hide
+.visual-hide {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
@@ -16,6 +12,7 @@
 .text__bold { font-weight: bold !important; }
 .p__large { font-size: $font__paragraph-lead }
 .p__small { font-size: $font__paragraph-small }
+
 
 
 // ----------------------

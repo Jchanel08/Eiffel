@@ -1,6 +1,4 @@
-@import '_mixins';
 @import '_variables';
-@import '_grid';
 @import '_helpers';
 
 html,
@@ -97,7 +95,7 @@ a {
 .eiffel {
   margin-top: 10px;
 
-  @include media-breakpoint-up(md) {
+  @include tablet {
     margin-top: 40px;
   }
 
@@ -107,7 +105,7 @@ a {
   }
 
   hr {
-    @include media-breakpoint-up(md) { margin: 40px 0; }
+    @include tablet { margin: 40px 0; }
   }
 
   .eiffel__links {
@@ -115,7 +113,7 @@ a {
     display: flex;
     align-items: center;
 
-    @include media-breakpoint-up(md) { margin-top: 40px; }
+    @include tablet { margin-top: 40px; }
 
     a {
       margin-top: 0;
