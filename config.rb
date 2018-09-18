@@ -43,7 +43,10 @@ end
 configure :build do
   activate :minify_html
   activate :minify_css
-  activate :minify_javascript
+  activate :minify_javascript,
+  compressor: proc {
+    ::Uglifier.new(:harmony => true)
+  }
   activate :favicon_maker do |f|
     f.template_dir  = 'source/images'
     f.icons = {
