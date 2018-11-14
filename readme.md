@@ -22,6 +22,8 @@ _Eiffel isntructions are written for MacOS, but can work on Windows if you use y
 
 2. You need [Ruby](https://www.ruby-lang.org/en/downloads/), [Node.js](https://nodejs.org/en/), [Yarn](https://yarnpkg.com/en/) to use Eiffel.
 - _Yarn is used as a preference because it's much faster than NPM. You can use NPM instead if you prefer_
+- If using MacOs, you must also have to make sure to install Xcode Command Line Tools: `
+xcode-select --install`
 
 3. Once you have all of those, you can start installing the neccesary dependancies to Eiffel. Open terminal and type:
 - Install Middleman: `gem install middleman`
