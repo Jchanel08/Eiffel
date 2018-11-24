@@ -26,8 +26,9 @@ _Eiffel isntructions are written for MacOS, but can work on Windows if you use y
 xcode-select --install`
 
 3. Once you have all of those, you can start installing the neccesary dependancies to Eiffel. Open terminal and type:
-- Install Middleman: `gem install middleman`
-- Install Bundler: `gem install bundler`
+- Install Middleman: `gem install middleman` (core builder for website)
+- Install Bundler: `gem install bundler` (package installer for project gems)
+- Install ImageMagick: `brew install imagemagick` (or download [here](https://www.imagemagick.org/script/index.php))
 
 4. Navigate to your project folder (`cd/your-project`):
 - Install Middleman and gem dependancies: `bundle install`
