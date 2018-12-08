@@ -1,16 +1,18 @@
 # Eiffel
 
-_A Simple Way to Develop Static Content Websites_
+_Rapid Static Content Websites_
 
 Powered by [Vault Labs](https://vaultlabs.co)
 
 ***
 
-This is a pre-configured middleman project that is the skeleton for any static-content website you want to build. Middleman is the base, allowing for partials, layouts, frontmatter, livereloading (for development) and extensions like blogging systems that can be installed for even more functionality. The project comes pre-configured with Post-css and Babel using Webpack. This gives you all future versions of JS and CSS, plus all the features that future spec's offer. For JS, thats cleaner syntax and the ability to load modules. For CSS, it's variables, autoprefixing, and color functions.
+This is a pre-configured project template that can power nearly any static website configuration you can throw at it. The Middleman static site generator serves as the base; allowing for partials, layouts, frontmatter, livereloading (for development) and extensions like blogging systems that can be installed for even more functionality. 
 
-The benefit of using a static site generator is that it gives you a clean enviroment to write your content, and a flexible system for your HTML, CSS, and JS. Run `yarn run-dev` in a development enviroment to see a local (and live-reloading) version of your project. Work on it to your hearts content, then simply run the build command `yarn run-build` for a compressed and optimized version of your website, ready for upload via FTP, or you can use GitHub to host your site, or use a service like Netlify to allow for instant builds of your site every time you push to Github.
+The project comes pre-configured with Babel JS transpiling and SCSS support using Webpack v4. This gives you support for all the current versions of JS and CSS, plus all the features that future spec's offer. For JS, thats cleaner syntax and the ability to load modules. For CSS, it's variables, autoprefixing, and color functions.
 
-Eiffel includes basic HTML setup that includes all the neccesdary meta tags for SEO.
+The benefits of using a static site generator are endless, but our favorites are that it gives you a clean enviroment to write your content, and a flexible system for your managing your code, and it makes development and building production-ready websites a breeze. Combine it with a static content host like [GitHub Pages](https://pages.github.com/) or [Netlify](https://www.netlify.com/) and feel like a superhero every time you "push" your site updates and see them online within minutes.
+
+Eiffel is maintained by the team at [Vault Labs](https://vaultlabs.co).
 
 ***
 
