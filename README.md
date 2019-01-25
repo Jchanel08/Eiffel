@@ -1,16 +1,18 @@
 # Eiffel
 
-_Rapid Static Content Websites_
+_Rapidly Build Static Content Websites_
 
 Powered by [Vault Labs](https://vaultlabs.co)
 
 ***
 
-This is a pre-configured project template that can power nearly any static website configuration you can throw at it. The Middleman static site generator serves as the base; allowing for partials, layouts, frontmatter, livereloading (for development) and extensions like blogging systems that can be installed for even more functionality. 
+Eiffel is an opinionated framework to power your static content websites. It uses [Middleman](https://middlemanapp.com) as a base to build the content, and also includes a pre-configured webpack configuration, and a basic template of all the core ingredients needed in any new website (think SEO header tags, CSS utility classes, Templates for headers, layouts, footers).
 
-The project comes pre-configured with Babel JS transpiling and SCSS support using Webpack v4. This gives you support for all the current versions of JS and CSS, plus all the features that future spec's offer. For JS, thats cleaner syntax and the ability to load modules. For CSS, it's variables, autoprefixing, and color functions.
+Middleman drives the core of tools you will use to build a new website: allowing for partials, layouts, frontmatter, livereloading (for development). All of these are pre-installed and pre-configured in Eiffel, you can also easily add blog-like functionality with [one additional extension](https://middlemanapp.com/basics/blogging/).
 
-The benefits of using a static site generator are endless, but our favorites are that it gives you a clean enviroment to write your content, and a flexible system for your managing your code, and it makes development and building production-ready websites a breeze. Combine it with a static content host like [GitHub Pages](https://pages.github.com/) or [Netlify](https://www.netlify.com/) and feel like a superhero every time you "push" your site updates and see them online within minutes.
+Webpack handles most of the assets, including Babel JS transpiling and SCSS support. This gives you support for all the current versions of JS and CSS, plus all the features that future spec's offer. For JS, thats cleaner syntax and the ability to load modules. For CSS, it's variables, autoprefixing, and color functions.
+
+Eiffel can be combined with a static content host like [Netlify](https://www.netlify.com/), which features continuous deployment. Simply sync your code with GitHub, and Netlify will build & serve the latest version of your website. 
 
 Eiffel is maintained by the team at [Vault Labs](https://vaultlabs.co).
 
@@ -18,7 +20,7 @@ Eiffel is maintained by the team at [Vault Labs](https://vaultlabs.co).
 
 ## Getting Started
 
-_Eiffel instructions are written for MacOS, but can work on Windows if you use command line._
+_Instructions are written for MacOS; however all technologies will work on Windows/Linux_
 
 1. Clone this repo or download it manually, and copy/paste the folder to your preferred location.
 
@@ -38,10 +40,12 @@ xcode-select --install`
 
 
 ## Development vs. Production
-You will likely use Eiffel in 2 ways. The first is to build your website, in which case you need a local development enviroment. Running `yarn eiffel` from your project folder will start a live-reload server which you can see at `http://localhost:4567`.
+When building your website locally: use the terminal command `yarn eiffel` from your project folder to start a live-reload server that will preview your website at `http://localhost:4567`. Middleman will run in the background and render the final build version of your website, without creating the actual files in your project folder.
 
-When you're ready to push the site live, or just send someone a completed version of the HTML that _could_ be loaded onto a server, run `yarn eiffel-build` and you will get a compressed and optimized version of your site in the `/build` folder of your project. If there are any errors with your build, they will print to the console.
+When you're ready to push the site live, or need a copy of the production-ready code that _could_ be loaded onto a web server: run `yarn eiffel-build` and a compressed  optimized version of your site in the `/build` folder of your project. If there are any errors with your build, they will print to the console.
 
 
 ## Other helpful tips
-This should allow you to spin up new web projects in a matter of seconds, rather than spending hours building folder structure or finding configurations online. Use a modern IDE like [VSCode](https://code.visualstudio.com/) or [Atom](https://atom.io/) which has a terminal window built into the editor (click and "pull" from the bottom of the window when you're open to your project folder). When you're ready to show the world what you've made, deploy to a static-site deployment service like [Netlify](https://netlify.com) and be blown away by how powerful continued deployment makes you feel.
+- This should allow you to spin up new web projects in a matter of seconds, rather than spending hours building folder structure or finding configurations online. It is intended to allow for lots of hacking to achieve whatever project you're looking to tackle.
+- Use a modern IDE like [VSCode](https://code.visualstudio.com/) or [Atom](https://atom.io/) which has a terminal window built into the editor. 
+- When you're ready to show the world what you've made, deploy to a static-site deployment service like [Netlify](https://netlify.com) and be blown away by fast your new static content website loads in browsers.
